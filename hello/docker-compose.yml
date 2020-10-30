@@ -1,0 +1,6 @@
+app:
+  build: ".."
+  volumes:
+    - .:/root
+  working_dir: /root
+  command: "sh run.sh"

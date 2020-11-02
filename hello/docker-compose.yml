@@ -3,4 +3,3 @@ app:
   volumes:
     - .:/root
   working_dir: /root
-  command: "sh run.sh"

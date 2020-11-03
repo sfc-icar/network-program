@@ -1,0 +1,5 @@
+app:
+    build: ".."
+    volumes:
+    - .:/root
+    working_dir: /root

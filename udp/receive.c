@@ -21,7 +21,7 @@ int main(void) {
     }
 
     bindaddr.sin_family = AF_INET; /* IPv4 */
-    bindaddr.sin_port + htons(11111); /* ポート番号は11111 */
+    bindaddr.sin_port = htons(11111); /* ポート番号は11111 */
     bindaddr.sin_addr.s_addr = INADDR_ANY; /* すべてのローカルインターフェース */
 
     /* ソケットに名前をつける */

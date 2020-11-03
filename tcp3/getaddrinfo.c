@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <struct.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netdb.h>
@@ -8,9 +8,11 @@
 int main(void) {
     char *hostname = "www.example.com";
     char *service = "http";
+
     struct addrinfo hints, *res0, *res;
     int err;
     int sock;
+    int n;
 
     memset(&hints, 0, sizeof(hints));
     hints.ai_socktype = SOCK_STREAM;
@@ -42,6 +44,20 @@ int main(void) {
 
     freeaddrinfo(res0);
 
-    /* ここに書く */
+    /* サーバからデータを受信 */
+    char req[] = "GET / HTTP/1.1\r\nHost: www.example.com\r\n\r\n";
+    write(sock, req, sizeof(req));
+
+    n = 1;
+    while(n != 0) {
+        char resp[64];
+        memset(resp, 0, sizeof(resp));
+        n = read(sock, resp, sizeof(resp));
+        printf("%s", resp);
+    }
+    
+    /* socketの終了 */
+    close(sock);
+
     return 0;
 }

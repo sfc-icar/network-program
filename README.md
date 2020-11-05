@@ -10,6 +10,10 @@
 
 ----
 
+<img src="https://i.imgur.com/vJOy0Hg.png" height=600px />
+
+----
+
 ## アジェンダ
 
 - 環境構築
@@ -24,6 +28,8 @@
 ----
 
 ## Mac
+
+※未確認
 
 ```shell=
 # homebrewをインストール
@@ -41,8 +47,6 @@ git clone https://github.com/sfc-icar/network-program
 cd network-program
 ```
 
-※未確認
-
 ----
 
 ## Windows
@@ -51,6 +55,8 @@ cd network-program
   a. ここの[リンク](https://qiita.com/yoshige/items/dbc85b048fba51e597ee)を参考に
 2. サンプルプログラムのダウンロード
 
+※未確認
+
 ```shell=
 # WSLのターミナルで以下を実行
 git clone https://github.com/sfc-icar/network-program
@@ -58,11 +64,13 @@ cd network-program
 sh install.sh
 ```
 
-※未確認
-
 ---
 
 ## TCP
+
+----
+
+<img src="https://raw.githubusercontent.com/sfc-icar/network-program/main/img/1.jpg" height=600px />
 
 ----
 
@@ -398,6 +406,11 @@ main(void)
 
 ## UDP
 
+
+----
+
+<img src="https://raw.githubusercontent.com/sfc-icar/network-program/main/img/2.jpg" height=600px />
+
 ----
 
 #### receiveサンプル
@@ -522,12 +535,11 @@ int main(void) {
     - ```www.example.com```と通信を行うときにそのアドレスのIPアドレスを得ること
 - ソケットを利用したプログラムではgetaddrinfoを利用する
 
-----
-
 
 ---
 
-## IPv6とIPv4のどちらを使うべきか（おまけ）
+## IPv6とIPv4の
+## どちらを使うべきか（おまけ）
 
 ----
 
@@ -542,7 +554,8 @@ int main(void) {
 
 ----
 
-- RFC 6555 - Happy Eyeballs
+##### RFC 6555 - Happy Eyeballs
+
 1. getaddrinfo()を利用して名前解決を行う
 2. getaddrinfo()から受け取ったIPアドレスリストの順番に接続を試みる
 3. 接続の試みが短時間で確立しない場合、異なるアドレスファミリの最初のIPアドレスリストでの接続を試みる。この場合、直前に失敗したのがIPv6であればIPv4を試す
@@ -555,4 +568,7 @@ int main(void) {
 
 ---
 
-
+## まとめ
+---
+### あー、そーゆーことね
+### 完全に理解した

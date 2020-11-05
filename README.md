@@ -100,7 +100,7 @@ sh install.sh
 
 tcp/client.c
 
-```c=
+```c=client.c
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -177,7 +177,7 @@ main(void)
 
 tcp/server.c
 
-```c=
+```c=server.c
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -278,7 +278,7 @@ main(void)
 
 tcp2/client.c
 
-```c=
+```c=client.c
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -350,7 +350,7 @@ main(void)
 
 tcp2/server.c
 
-```c=
+```c=server.c
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -439,7 +439,7 @@ main(void)
 
 udp/receive.c
 
-```c=
+```c=receive.c
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -498,7 +498,7 @@ int main(void) {
 
 udp/send.c
 
-```c=
+```c=send.c
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>

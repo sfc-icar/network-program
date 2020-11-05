@@ -54,4 +54,7 @@ dkms.conf
 client
 server
 getaddrinfo
+receive
+send
 .bash_history
+

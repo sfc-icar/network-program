@@ -14,12 +14,29 @@
 
 ----
 
+HackMD
+
+[![hackmd-github-sync-badge](https://hackmd.io/6HTr3vzZSoaV4oA1xqBO2g/badge)](https://hackmd.io/6HTr3vzZSoaV4oA1xqBO2g)
+
+スライド
+
+[https://hackmd.io/@akakou/rkzn05KdP#/](https://hackmd.io/@akakou/rkzn05KdP#/)
+
+Github
+
+[https://github.com/sfc-icar/network-program](https://github.com/sfc-icar/network-program)
+
+----
+
 ## アジェンダ
 
 - 環境構築
 - TCP通信
-- TCP通信（バインドあり）
+- TCP通信（バインドなし）
 - UDP通信
+- getaddrinfo
+- まとめ
+
 
 ----
 
